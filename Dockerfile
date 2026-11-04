@@ -7,7 +7,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt \
  && python -m nltk.downloader stopwords
 
-COPY src/__init__.py src/__init__.py
 COPY src/api src/api
 COPY src/utils src/utils
 COPY models models
