@@ -11,7 +11,7 @@ COPY src/__init__.py src/__init__.py
 COPY src/api src/api
 COPY src/utils src/utils
 COPY models models
-COPY app_api.py .
+COPY app.py .
 
 EXPOSE 7860
 CMD ["python", "app_api.py"]
