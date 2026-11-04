@@ -1,0 +1,29 @@
+:root { --bg: #ffffff; --fg: #000000; --bord: #999999; }
+body.sombre { --bg: #222222; --fg: #ffffff; --bord: #666666; }
+
+body { width: 700px; margin: 0; padding: 15px; font-family: Arial, sans-serif; font-size: 14px; background: var(--bg); color: var(--fg); }
+
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+h1 { font-size: 18px; margin: 0; }
+
+button { cursor: pointer; padding: 6px 12px; border: 1px solid var(--bord); background: var(--bg); color: var(--fg); }
+#analyser { width: 100%; padding: 10px; margin-bottom: 8px; }
+#message { margin: 8px 0; }
+#message.erreur { color: red; }
+
+.ligne { display: grid; grid-template-columns: 80px 1fr 120px; gap: 10px; align-items: center; margin: 4px 0; }
+.barre { height: 12px; border: 1px solid var(--bord); }
+.rempli { height: 100%; }
+[data-k="1"] { background: green; }
+[data-k="0"] { background: gray; }
+[data-k="-1"] { background: red; }
+
+#filtres { display: flex; gap: 6px; margin: 12px 0; }
+#filtres .actif { font-weight: bold; text-decoration: underline; }
+
+#liste { list-style: none; padding: 0; margin: 0; max-height: 300px; overflow-y: auto; border: 1px solid var(--bord); }
+#liste li { padding: 8px; border-bottom: 1px solid var(--bord); }
+#liste p { margin: 4px 0 0; word-break: break-word; }
+.tag { color: #fff; padding: 2px 8px; font-size: 12px; }
+
+.actions { display: flex; gap: 8px; margin-top: 10px; }
